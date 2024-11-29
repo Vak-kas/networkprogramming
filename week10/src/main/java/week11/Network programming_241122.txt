@@ -1,0 +1,17 @@
+network programming 241122
+
+서버 소켓은 계속 누가 들어오는지 확인한다(Listening...)
+클라이언트는 접속을 시도하면 서버 소켓과 클라이언트 사이의 협상을 한다.
+클라이언트-서버 연결 시 새로운 소켓 생성, 소켓을 통해서 통신
+- accept() 메소드 실행 시 클라이언트 연결 전까지 대기 하다가, 연결이 되면 소켓 객체를 반환한다.
+- 소켓의 outputStream으로 입출력 실행
+
+DaytimeServer 실행 후 telnet localhost 1300으로 서버 접속해서 확인 가능하다.
+
+HTTP server
+- 헤더 먼저 보내고 나중에 리소스 보냄
+- 원하는 리소스 보내줌
+- Get + / (path) 에 해당하는 파일을 리턴하는 서버
+
+redirector
+- header : location으로 보내서 리다이렉트 시켜줌
